@@ -4,9 +4,7 @@ You can use the [editor on GitHub](https://github.com/Apochens/Apochens.github.i
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-
-[Logic](Logic/lec01.pdf)
-[Test](test.md)
+[Heart for Dwenking](./misc/dengwa.html)
 
 
 ### Markdown
