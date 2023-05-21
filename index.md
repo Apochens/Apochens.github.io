@@ -5,7 +5,7 @@
 <ul>
     {% for post in site.posts %}
     <li>
-        <a herf="{{ post.url }}">{{ post.title }}<a/>
+        <a herf="{{ post.url }}">{{ post.title }}</a>
     </li>
     <% endfor %>
 </ul>
