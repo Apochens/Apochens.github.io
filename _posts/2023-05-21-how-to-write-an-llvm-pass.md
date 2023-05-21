@@ -1,5 +1,5 @@
 ---
-layout: post
+# layout: post
 title: "How to write an LLVM Pass"
 date: 2023-05-21
 ---
