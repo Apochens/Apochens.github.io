@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to write an LLVM Pass"
-date: YYYY-MM-DD hh:mm:ss -0000
+date: 2023-05-21
 ---
 
 The official tutorial of writing an LLVM Pass is [here](https://www.llvm.org/docs/WritingAnLLVMPass.html). 
