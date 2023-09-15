@@ -48,5 +48,5 @@ Miscellaneous Experience
 
 ### Internship Experience
 
-- ***Software Engineer***, Edge Mobile, STCA, Microsoft
+- ***Software Engineer***, Edge Mobile, STCA, Microsoft, 2022.7-2022.9
 
