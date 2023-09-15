@@ -2,6 +2,9 @@
 # layout: post
 title: "How to write an LLVM Pass"
 date: 2023-05-21
+permalink: /posts/2023/05/how-to-write-an-llvm-pass/
+tags:
+    - LLVM
 ---
 
 The official tutorial of writing an LLVM Pass is [here](https://www.llvm.org/docs/WritingAnLLVMPass.html). 
