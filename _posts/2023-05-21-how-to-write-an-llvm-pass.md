@@ -122,7 +122,7 @@ Then load and enable our Hello pass with `opt`:
 ```bash
 opt -load path-to-pass/Hello.so -hello < main.bc > /dev/null
 ```
-In this example, we just discard the optimized bitcode file by redirecting the `stdout` to `/dev/null`. If the pass modifies the code (__e.g.__, adding or deleting some instructions), you can save the optimized bitcode by redirecting the `stdout` to some file. For example, we can save the output above using `> main_opt.bc`.
+In this example, we just discard the optimized bitcode file by redirecting the `stdout` to `/dev/null`. If the pass modifies the code (_e.g._, adding or deleting some instructions), you can save the optimized bitcode by redirecting the `stdout` to some file. For example, we can save the output above using `> main_opt.bc`.
 
 After the pass, information or data collected during the pass will print according to your setting. If you use the pass to modify the original code, the optimized bitcode file (_e.g._, `main_opt.bc`) can be compiled to an executable and those code modifications will take effect when running that executable. For instance:
 ```bash
