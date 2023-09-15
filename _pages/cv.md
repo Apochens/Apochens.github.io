@@ -22,11 +22,8 @@ Work experience
   
 Publications
 ======
-  <!-- <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-- [ESEC/FSE '23] **Automata-Based Trace Analysis for Aiding Diagnosing GUI Testing Tools for Android**
-  Enze Ma$^*$, **Shan Huang**$^*$, Weigang He, Ting Su$^†$, Jue Wang, Huiyu Liu, Geguang Pu, Zhendong Su
+- [ESEC/FSE '23] **Automata-Based Trace Analysis for Aiding Diagnosing GUI Testing Tools for Android**</br>
+  Enze Ma*, **Shan Huang***, Weigang He, Ting Su$^†$, Jue Wang, Huiyu Liu, Geguang Pu, Zhendong Su
 
 <!-- Talks
 ======
@@ -42,14 +39,14 @@ Publications
   
 Miscellaneous Experience
 ======
-#### Honor & Awards
+### Honor & Awards
 
 - ***Shanghai OutStanding Graduate***, East China Normal University, 2023
 - ***OutStanding Graduate Thesis***, East China Normal University, 2023
 - ***Meritorious Winner***, MCM/ICM, 2021
 - ***National Scholarship***, Ministry of Education of the PRC, 2019
 
-#### Internship Experience
+### Internship Experience
 
 - ***Software Engineer***, Edge Mobile, STCA, Microsoft
 
