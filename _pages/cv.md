@@ -22,8 +22,8 @@ Work experience
   
 Publications
 ======
-- [ESEC/FSE '23] **Automata-Based Trace Analysis for Aiding Diagnosing GUI Testing Tools for Android**</br>
-  Enze Ma*, **Shan Huang***, Weigang He, Ting Su$^†$, Jue Wang, Huiyu Liu, Geguang Pu, Zhendong Su
+- [ESEC/FSE '23] **Automata-Based Trace Analysis for Aiding Diagnosing GUI Testing Tools for Android** </br>
+Enze Ma\*, **Shan Huang**\*, Weigang He, Ting Su$^†$, Jue Wang, Huiyu Liu, Geguang Pu, Zhendong Su
 
 <!-- Talks
 ======
