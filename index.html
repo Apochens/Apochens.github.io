@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shan Huang's Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    nav {
+      background: #eaeaea;
+      border-bottom: 1px solid #ddd;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: #333;
+    }
+    nav ul li a:hover {
+      background: #ddd;
+    }
+
+    section.light-section {
+      background-color: #fff;
+      color: #333;
+      padding: 40px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    section.light-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+    .section-content {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .publication-list {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .publication-item {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+    .publication-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .publication-venue {
+      background-color: #00aaff;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    .publication-year {
+      font-size: 1.1em;
+      color: #666;
+    }
+    .publication-title {
+      margin: 5px 0;
+      font-size: 1.2em;
+      color: #333;
+    }
+    .publication-authors {
+      font-style: italic;
+      color: #555;
+      margin: 5px 0;
+    }
+    .publication-details {
+      margin: 5px 0;
+      color: #777;
+    }
+    .publication-links {
+      margin-top: 10px;
+    }
+    .publication-links a {
+      display: inline-block;
+      background-color: #f4f4f4;
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+      font-size: 0.9em;
+    }
+    .publication-links a:hover {
+      background-color: #ddd;
+    }
+
+    footer {
+      background: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 15px 0;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shan Huang</h1>
+    <p>Software Engineering Institute, East China Normal University</p>
+    <p><strong>Email:</strong> shan.huang@stu.ecnu.edu.cn</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="light-section">
+    <h2>About Me</h2>
+    <div class="section-content">
+      <p>
+        I'm now a Ph.D. candidate of Software Engineering Institute, <a href="https://www.ecnu.edu.cn" target="_blank">East China Normal University</a> (or ECNU).
+        He is supervised by Prof. <a href="https://tingsu.github.io" target="_blank">Ting Su</a>. Previously, he obtained the B.S. degree at ECNU (2019-2023).
+      </p>
+    </div>
+  </section>
+
+  <section id="research" class="light-section">
+    <h2>Research</h2>
+    <div class="section-content">
+      <p>
+        His research interests include but not limited to compiler testing.
+      </p>
+    </div>
+  </section>
+
+  <section id="publications" class="light-section">
+    <h2>Publications</h2>
+    <div class="publication-list">
+      <!-- Publication 1 -->
+      <div class="publication-item">
+        <div class="publication-header">
+          <span class="publication-venue">PLDI'25</span>
+          <span class="publication-year">2025</span>
+        </div>
+        <h3 class="publication-title">
+          Robustifying Debug Information Updates in LLVM via Control-Flow Conformance Analysis
+        </h3>
+        <p class="publication-authors">
+          <strong><u>Shan Huang</u></strong>, Jingjing Liang, Ting Su<sup>*</sup>, Qirun Zhang
+        </p>
+        <p class="publication-details">
+          <em>ACM SIGPLAN Conference on Programming Language Design and Implementation, 2025</em>
+        </p>
+        <div class="publication-links">
+          <a href="pldi25-metaloc.pdf" target="_blank">PDF</a>
+          <a href="https://doi.org/10.5281/zenodo.15023927" target="_blank">TOOL</a>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <div class="publication-header">
+          <span class="publication-venue">ESEC/FSE'23</span>
+          <span class="publication-year">2023</span>
+        </div>
+        <h3 class="publication-title">
+          Automata-Based Trace Analysis for Aiding Diagnosing GUI Testing Tools for Android
+        </h3>
+        <p class="publication-authors">
+          Enze Ma<sup>#</sup>, <strong><u>Shan Huang<sup>#</sup></u></strong>, Weigang He, Ting Su<sup>*</sup>, Jue Wang, Huiyu Liu, Geguang Pu, Zhendong Su
+        </p>
+        <p class="publication-details">
+          <em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, 2023</em>
+        </p>
+        <p style="font-size: small;margin: 5px 0;">(<sup>#</sup>Equal Contribution)</p>
+        <div class="publication-links">
+          <a href="assets/fse23-ddroid.pdf" target="_blank">PDF</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shan Huang. All rights reserved.</p>
+  </footer>
+</body>
+</html>
