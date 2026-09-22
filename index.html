@@ -23,20 +23,20 @@
 
     .hero {
       background: #f4f4f4;
-      padding: 40px 20px;
+      padding: 26px 18px;
       border-bottom: 1px solid #ddd;
     }
     .hero-inner {
-      max-width: 1100px;
+      max-width: 900px;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
-      gap: 40px;
+      gap: 26px;
       align-items: flex-start;
     }
     .hero-photo {
-      flex: 0 0 240px;
-      width: 240px;
+      flex: 0 0 120px;
+      width: 120px;
       aspect-ratio: 1080 / 1620;
       background: #eaeaea;
       border: 1px dashed #bbb;
@@ -45,28 +45,29 @@
       align-items: center;
       justify-content: center;
       color: #999;
-      font-size: 0.9em;
+      font-size: 0.78em;
       text-align: center;
     }
     .hero-info {
-      flex: 0 1 240px;
+      flex: 0 1 200px;
+      font-size: 0.9em;
     }
     .hero-info h1 {
-      font-size: 1.8em;
-      margin-bottom: 12px;
+      font-size: 1.5em;
+      margin-bottom: 8px;
     }
     .hero-info p {
-      margin: 6px 0;
-      line-height: 1.5;
+      margin: 5px 0;
+      line-height: 1.45;
     }
     .hero-about {
-      flex: 1 1 360px;
-      font-size: 1.05em;
-      line-height: 1.6;
+      flex: 1 1 320px;
+      font-size: 0.9em;
+      line-height: 1.55;
     }
     .hero-about h2 {
-      margin-bottom: 16px;
-      font-size: 1.6em;
+      margin-bottom: 12px;
+      font-size: 1.35em;
       letter-spacing: 1px;
     }
     nav {
@@ -85,8 +86,9 @@
     }
     nav ul li a {
       display: block;
-      padding: 15px 20px;
+      padding: 10px 15px;
       color: #333;
+      font-size: 0.9em;
     }
     nav ul li a:hover {
       background: #ddd;
@@ -95,59 +97,60 @@
     section.light-section {
       background-color: #fff;
       color: #333;
-      padding: 40px 20px;
+      padding: 26px 18px;
       border-bottom: 1px solid #ddd;
     }
     section.light-section h2 {
       text-align: center;
-      margin-bottom: 40px;
-      font-size: 2em;
+      margin-bottom: 26px;
+      font-size: 1.55em;
       letter-spacing: 1px;
     }
     .section-content {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
-      font-size: 1.1em;
-      line-height: 1.6;
+      font-size: 0.95em;
+      line-height: 1.55;
     }
     .section-content ul {
       margin: 0;
-      padding-left: 24px;
+      padding-left: 22px;
     }
     .section-content li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .publication-list {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
+      font-size: 0.92em;
     }
     .publication-item {
-      margin-bottom: 40px;
+      margin-bottom: 26px;
       border-bottom: 1px solid #ccc;
-      padding-bottom: 20px;
+      padding-bottom: 14px;
     }
     .publication-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .publication-venue {
       background-color: #00aaff;
       color: #fff;
-      padding: 5px 10px;
+      padding: 3px 8px;
       border-radius: 4px;
       font-weight: bold;
-      font-size: 0.9em;
+      font-size: 0.78em;
     }
     .publication-year {
-      font-size: 1.1em;
+      font-size: 0.95em;
       color: #666;
     }
     .publication-title {
-      margin: 5px 0;
-      font-size: 1.2em;
+      margin: 4px 0;
+      font-size: 1.05em;
       color: #333;
     }
     .publication-authors {
@@ -167,12 +170,12 @@
       background-color: #f4f4f4;
       color: #333;
       text-decoration: none;
-      padding: 5px 10px;
-      margin-right: 10px;
+      padding: 4px 9px;
+      margin-right: 8px;
       border: 1px solid #ccc;
       border-radius: 4px;
       transition: background-color 0.2s;
-      font-size: 0.9em;
+      font-size: 0.78em;
     }
     .publication-links a:hover {
       background-color: #ddd;
@@ -182,8 +185,9 @@
       background: #f4f4f4;
       color: #333;
       text-align: center;
-      padding: 15px 0;
+      padding: 11px 0;
       border-top: 1px solid #ddd;
+      font-size: 0.85em;
     }
   </style>
 </head>
@@ -191,9 +195,6 @@
 
   <section id="about" class="hero">
     <div class="hero-inner">
-      <!-- <div class="hero-photo" role="img" aria-label="Portrait photo placeholder (1080x1620)">
-        <span>Photo<br>1080 × 1620</span>
-      </div> -->
       <img class="hero-photo" src="assets/shan.jpg" alt="Shan's photo">
       <div class="hero-info">
         <h1>Shan Huang</h1>
@@ -287,7 +288,6 @@
           <em>40th IEEE/ACM International Conference on Automated Software Engineering</em>
         </p>
         <p>🏆 <em style="color: red;font-weight: bold;">ACM SIGSOFT Distinguished Paper Award</em></p>
-        <p style="font-size: small;margin: 5px 0;">(<sup>#</sup>Equal Contribution)</p>
         <div class="publication-links">
           <a href="" target="_blank">PDF</a>
         </div>
@@ -326,7 +326,6 @@
         <p class="publication-details">
           <em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</em>
         </p>
-        <p style="font-size: small;margin: 5px 0;">(<sup>#</sup>Equal Contribution)</p>
         <div class="publication-links">
           <a href="paper/fse23-ddroid.pdf" target="_blank">PDF</a>
         </div>
