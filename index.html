@@ -126,27 +126,30 @@
       font-size: 0.92em;
     }
     .publication-item {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
       margin-bottom: 26px;
       border-bottom: 1px solid #ccc;
       padding-bottom: 14px;
     }
-    .publication-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8px;
-    }
     .publication-venue {
+      flex: 0 0 auto;
+      align-self: flex-start;
+      margin-top: 5px;
       background-color: #00aaff;
       color: #fff;
       padding: 3px 8px;
       border-radius: 4px;
       font-weight: bold;
-      font-size: 0.78em;
+      font-size: 0.72em;
+      white-space: nowrap;
     }
-    .publication-year {
-      font-size: 0.95em;
-      color: #666;
+    .publication-body {
+      flex: 1 1 auto;
+      min-width: 0;
     }
     .publication-title {
       margin: 4px 0;
@@ -234,100 +237,95 @@
     <div class="publication-list">
 
       <div class="publication-item">
-        <div class="publication-header">
-          <span class="publication-venue">ISSTA '26</span>
-          <span class="publication-year">2026</span>
-        </div>
-        <h3 class="publication-title">
-          Finding and Understanding Missed Optimizations in WebAssembly Optimizer
-        </h3>
-        <p class="publication-authors">
-          Ruiyang Xu<sup>#</sup>, Zetao Fan<sup>#</sup>, <strong><u>Shan Huang</u></strong>, Ting Su<sup>&dagger;</sup>
-        </p>
-        <p class="publication-details">
-          <em>35st ACM SIGSOFT International Symposium on Software Testing and Analysis</em>
-        </p>
-        <div class="publication-links">
-          <a href="" target="_blank">PDF</a>
+        <span class="publication-venue">ISSTA '26</span>
+        <div class="publication-body">
+          <h3 class="publication-title">
+            Finding and Understanding Missed Optimizations in WebAssembly Optimizer
+          </h3>
+          <p class="publication-authors">
+            Ruiyang Xu<sup>#</sup>, Zetao Fan<sup>#</sup>, <strong><u>Shan Huang</u></strong>, Ting Su<sup>&dagger;</sup>
+          </p>
+          <p class="publication-details">
+            <em>35st ACM SIGSOFT International Symposium on Software Testing and Analysis</em>
+          </p>
+          <div class="publication-links">
+            <a href="" target="_blank">PDF</a>
+          </div>
         </div>
       </div>
 
       <!-- Publication 1 -->
       <div class="publication-item">
-        <div class="publication-header">
-          <span class="publication-venue">PLDI '25</span>
-          <span class="publication-year">2025</span>
-        </div>
-        <h3 class="publication-title">
-          Robustifying Debug Information Updates in LLVM via Control-Flow Conformance Analysis
-        </h3>
-        <p class="publication-authors">
-          <strong><u>Shan Huang</u></strong>, Jingjing Liang, Ting Su<sup>&dagger;</sup>, Qirun Zhang
-        </p>
-        <p class="publication-details">
-          <em>46th ACM SIGPLAN Conference on Programming Language Design and Implementation</em>
-        </p>
-        <div class="publication-links">
-          <a href="paper/pldi25-metaloc.pdf" target="_blank">PDF</a>
-          <a href="https://doi.org/10.5281/zenodo.15023927" target="_blank">TOOL</a>
-        </div>
-      </div>
-
-      <div class="publication-item">
-        <div class="publication-header">
-          <span class="publication-venue">ASE '25</span>
-          <span class="publication-year">2025</span>
-        </div>
-        <h3 class="publication-title">
-          Finding Bugs in MLIR Compiler Infrastructure via Lowering Space Exploration
-        </h3>
-        <p class="publication-authors">
-          Jingjing Liang<sup>#</sup>, <strong><u>Shan Huang<sup>#</sup></u></strong>, Ting Su<sup>&dagger;</sup>
-        </p>
-        <p class="publication-details">
-          <em>40th IEEE/ACM International Conference on Automated Software Engineering</em>
-        </p>
-        <p>🏆 <em style="color: red;font-weight: bold;">ACM SIGSOFT Distinguished Paper Award</em></p>
-        <div class="publication-links">
-          <a href="" target="_blank">PDF</a>
+        <span class="publication-venue">PLDI '25</span>
+        <div class="publication-body">
+          <h3 class="publication-title">
+            Robustifying Debug Information Updates in LLVM via Control-Flow Conformance Analysis
+          </h3>
+          <p class="publication-authors">
+            <strong><u>Shan Huang</u></strong>, Jingjing Liang, Ting Su<sup>&dagger;</sup>, Qirun Zhang
+          </p>
+          <p class="publication-details">
+            <em>46th ACM SIGPLAN Conference on Programming Language Design and Implementation</em>
+          </p>
+          <div class="publication-links">
+            <a href="paper/pldi25-metaloc.pdf" target="_blank">PDF</a>
+            <a href="https://doi.org/10.5281/zenodo.15023927" target="_blank">TOOL</a>
+          </div>
         </div>
       </div>
 
       <div class="publication-item">
-        <div class="publication-header">
-          <span class="publication-venue">ATC '25</span>
-          <span class="publication-year">2025</span>
-        </div>
-        <h3 class="publication-title">
-          Optimizing Input Minimization in Kernel Fuzzing
-        </h3>
-        <p class="publication-authors">
-          Guo Hui, Hao Sun, <strong><u>Shan Huang</u></strong>, Ting Su<sup>&dagger;</sup>, Geguang Pu, Shaohua Li<sup>&dagger;</sup>
-        </p>
-        <p class="publication-details">
-          <em>2025 USENIX Annual Technical Conference</em>
-        </p>
-        <div class="publication-links">
-          <a href="paper/atc25-syzmini.pdf" target="_blank">PDF</a>
+        <span class="publication-venue">ASE '25</span>
+        <div class="publication-body">
+          <h3 class="publication-title">
+            Finding Bugs in MLIR Compiler Infrastructure via Lowering Space Exploration
+          </h3>
+          <p class="publication-authors">
+            Jingjing Liang<sup>#</sup>, <strong><u>Shan Huang<sup>#</sup></u></strong>, Ting Su<sup>&dagger;</sup>
+          </p>
+          <p class="publication-details">
+            <em>40th IEEE/ACM International Conference on Automated Software Engineering</em>
+          </p>
+          <p>🏆 <em style="color: red;font-weight: bold;">ACM SIGSOFT Distinguished Paper Award</em></p>
+          <div class="publication-links">
+            <a href="" target="_blank">PDF</a>
+          </div>
         </div>
       </div>
 
       <div class="publication-item">
-        <div class="publication-header">
-          <span class="publication-venue">ESEC/FSE'23</span>
-          <span class="publication-year">2023</span>
+        <span class="publication-venue">ATC '25</span>
+        <div class="publication-body">
+          <h3 class="publication-title">
+            Optimizing Input Minimization in Kernel Fuzzing
+          </h3>
+          <p class="publication-authors">
+            Guo Hui, Hao Sun, <strong><u>Shan Huang</u></strong>, Ting Su<sup>&dagger;</sup>, Geguang Pu, Shaohua Li<sup>&dagger;</sup>
+          </p>
+          <p class="publication-details">
+            <em>2025 USENIX Annual Technical Conference</em>
+          </p>
+          <div class="publication-links">
+            <a href="paper/atc25-syzmini.pdf" target="_blank">PDF</a>
+          </div>
         </div>
-        <h3 class="publication-title">
-          Automata-Based Trace Analysis for Aiding Diagnosing GUI Testing Tools for Android
-        </h3>
-        <p class="publication-authors">
-          Enze Ma<sup>#</sup>, <strong><u>Shan Huang<sup>#</sup></u></strong>, Weigang He, Ting Su<sup>&dagger;</sup>, Jue Wang, Huiyu Liu, Geguang Pu, Zhendong Su
-        </p>
-        <p class="publication-details">
-          <em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</em>
-        </p>
-        <div class="publication-links">
-          <a href="paper/fse23-ddroid.pdf" target="_blank">PDF</a>
+      </div>
+
+      <div class="publication-item">
+        <span class="publication-venue">ESEC/FSE'23</span>
+        <div class="publication-body">
+          <h3 class="publication-title">
+            Automata-Based Trace Analysis for Aiding Diagnosing GUI Testing Tools for Android
+          </h3>
+          <p class="publication-authors">
+            Enze Ma<sup>#</sup>, <strong><u>Shan Huang<sup>#</sup></u></strong>, Weigang He, Ting Su<sup>&dagger;</sup>, Jue Wang, Huiyu Liu, Geguang Pu, Zhendong Su
+          </p>
+          <p class="publication-details">
+            <em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</em>
+          </p>
+          <div class="publication-links">
+            <a href="paper/fse23-ddroid.pdf" target="_blank">PDF</a>
+          </div>
         </div>
       </div>
 
