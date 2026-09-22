@@ -21,12 +21,53 @@
       text-decoration: underline;
     }
 
-    header {
+    .hero {
       background: #f4f4f4;
-      color: #333;
-      text-align: center;
-      padding: 20px 0;
+      padding: 40px 20px;
       border-bottom: 1px solid #ddd;
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .hero-photo {
+      flex: 0 0 240px;
+      width: 240px;
+      aspect-ratio: 1080 / 1620;
+      background: #eaeaea;
+      border: 1px dashed #bbb;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 0.9em;
+      text-align: center;
+    }
+    .hero-info {
+      flex: 0 1 240px;
+    }
+    .hero-info h1 {
+      font-size: 1.8em;
+      margin-bottom: 12px;
+    }
+    .hero-info p {
+      margin: 6px 0;
+      line-height: 1.5;
+    }
+    .hero-about {
+      flex: 1 1 360px;
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+    .hero-about h2 {
+      margin-bottom: 16px;
+      font-size: 1.6em;
+      letter-spacing: 1px;
     }
     nav {
       background: #eaeaea;
@@ -148,31 +189,35 @@
 </head>
 <body>
 
-  <header>
-    <h1>Shan Huang</h1>
-    <p>Software Engineering Institute, East China Normal University</p>
-    <p><strong>Email:</strong> shan.huang@stu.ecnu.edu.cn</p>
-  </header>
-  
+  <section id="about" class="hero">
+    <div class="hero-inner">
+      <!-- <div class="hero-photo" role="img" aria-label="Portrait photo placeholder (1080x1620)">
+        <span>Photo<br>1080 × 1620</span>
+      </div> -->
+      <img class="hero-photo" src="assets/shan.jpg" alt="Shan's photo">
+      <div class="hero-info">
+        <h1>Shan Huang</h1>
+        <p>Software Engineering Institute, East China Normal University</p>
+        <p><strong>Email:</strong> shan.huang@stu.ecnu.edu.cn</p>
+      </div>
+      <div class="hero-about">
+        <h2>About Me</h2>
+        <p>
+          I'm a Ph.D. candidate of Software Engineering Institute, <a href="https://www.ecnu.edu.cn" target="_blank">East China Normal University</a> (or ECNU), supervised by Prof. <a href="https://tingsu.github.io" target="_blank">Ting Su</a>.
+          I have been a visiting scholar in <a href="https://ast.ethz.ch/" target="_blank">AST Lab</a>, <a href="https://ethz.ch/en.html" target="_blank">ETH Zurich</a> for six months (2025.11-2026.04), supervised by <a href="https://people.inf.ethz.ch/suz/" target="_blank">Zhendong Su</a>.
+          Previously, I obtained my B.S. degree at ECNU (2019-2023).
+        </p>
+      </div>
+    </div>
+  </section>
+
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#service">Service</a></li>
     </ul>
   </nav>
-
-  <section id="about" class="light-section">
-    <h2>About Me</h2>
-    <div class="section-content">
-      <p>
-        I'm a Ph.D. candidate of Software Engineering Institute, <a href="https://www.ecnu.edu.cn" target="_blank">East China Normal University</a> (or ECNU), supervised by Prof. <a href="https://tingsu.github.io" target="_blank">Ting Su</a>.
-        I have been a visiting scholar in <a href="https://ast.ethz.ch/" target="_blank">AST Lab</a>, <a href="https://ethz.ch/en.html" target="_blank">ETH Zurich</a> for six months (2025.11-2026.04), supervised by <a href="https://people.inf.ethz.ch/suz/" target="_blank">Zhendong Su</a>.
-        Previously, I obtained my B.S. degree at ECNU (2019-2023).
-      </p>
-    </div>
-  </section>
 
   <section id="research" class="light-section">
     <h2>Research</h2>
